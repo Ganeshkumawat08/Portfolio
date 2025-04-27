@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+section {
+    width: 80vw;
+    margin: auto;
+    padding: 10px;
+    margin-top: 10rem;
+}
+
+:root {
+    --text-color: #e5e5e5;
+    --bg-color: #2c2c2c;
+    --highlight: #fed700;
+    --border-color: #444444;
+    --card-bg: #2a2a2a;
+}
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Navbar */
+.navbar {
+    background-color: #202020;
+}
+
+.nav-link {
+    color: var(--text-color);
+}
+
+.nav-link.active {
+    color: var(--highlight) !important;
+}
+
+.nav-link:hover {
+    color: var(--highlight) !important;
+}
+
+.brand {
+    color: var(--highlight);
+    font-weight: bold;
+}
+
+.card {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.header {
+    text-align: center;
+    color: var(--highlight);
+    padding: 10px;
+    margin-bottom: 1rem;
+}
+
+.header i {
+    margin-right: 8px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    color: #888;
+}
+
+/* Main Section */
+.main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5rem;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+}
+
+/* Profile Photo */
+.profile-photo {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 15px solid #444444;
+    box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.profile-photo img:hover {
+    transform: scale(1.2);
+}
+
+/* Profile Text */
+.profile-text {
+    max-width: 750px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-text h1 {
+    color: var(--highlight);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.profile-text h3 {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.profile-text p {
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+/* Buttons */
+.buttons .btn {
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+/* Social Icons */
+.social {
+    margin-top: 20px;
+}
+
+.social i {
+    margin: 0 10px;
+    font-size: 24px;
+    transition: 0.5s;
+    color: var(--text-color);
+}
+
+.social i:hover {
+    color: #fed700;
+    transform: rotate(360deg);
+}
+
+.scroll-top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #202020;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: 20px;
+    display: none;
+    z-index: 999;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.scroll-top-btn:hover {
+    background-color: #171414;
+    transform: scale(1.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    section {
+        width: 90vw;
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-photo {
+        width: 250px;
+        height: 250px;
+    }
+
+    .profile-text h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        width: 100vw;
+    }
+
+    .profile-photo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .profile-text h1 {
+        font-size: 2rem;
+    }
+
+    .profile-text h3 {
+        font-size: 18px;
+    }
+
+    .profile-text p {
+        font-size: 14px;
+    }
+
+    .buttons .btn {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+    .social i {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .scroll-top-btn {
+        bottom: 20px;
+        right: 20px;
+        padding: 8px 12px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .scroll-top-btn {
+        bottom: 15px;
+        right: 15px;
+        padding: 6px 10px;
+        font-size: 16px;
+    }
+}
