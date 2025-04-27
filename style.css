@@ -194,7 +194,7 @@ footer {
 /* Responsive adjustments */
 @media (max-width: 1024px) {
     section {
-        width: 90vw;
+        width: 100vw;
     }
 
     .main {
