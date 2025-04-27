@@ -213,13 +213,9 @@ footer {
 }
 
 @media (max-width: 480px) {
-    section {
-        width: 100vw;
-    }
-
     .profile-photo {
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
     }
 
     .profile-text h1 {
