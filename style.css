@@ -194,7 +194,7 @@ footer {
 /* Responsive adjustments */
 @media (max-width: 1024px) {
     section {
-        width: 90vw;
+        width: 100vw;
     }
 
     .main {
@@ -213,10 +213,6 @@ footer {
 }
 
 @media (max-width: 480px) {
-    section {
-        width: 100vw;
-    }
-
     .profile-photo {
         width: 150px;
         height: 150px;
